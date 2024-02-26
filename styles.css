@@ -1,16 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
 
 @font-face {
-    font-family: monument;
-    src: url(monumentbold.ttf);
+    font-family: 'Monument Heavy';
+    src: url(assets/fonts/PPMonumentExtended-Black.otf);
+}
+
+@font-face {
+    font-family: 'Monument Light';
+    src: url(assets/fonts/PPMonumentExtended-Light.otf);
 }
 
 html {
-    font-family: monument;
-    background: rgb(253, 254, 246);
-    border: 3px solid black;
+    background: rgb(203, 255, 222);
+    border: 15px solid black;
+    width: 1680px;
+    height: 300px;
+}
+
+body::after {
+    /* adds a border where-ever you scroll*/
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    border: 10px solid rgb(0, 160, 240);
+    z-index: 9999;
 }
 
 .container {
-    text-align: center;
+    padding-left: 20px;
+    line-height: 20px;
+}
+
+#title {
+    font-size: 120px;
+    font-family: 'Monument Heavy', sans-serif;
+}
+
+#name {
+    font-family: 'Monument Light', sans-serif;
+    font-size: 30px;
 }
