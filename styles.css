@@ -20,6 +20,11 @@
     src: url(assets/fonts/RoobertBold.otf);
 }
 
+@font-face {
+    font-family: 'Larsseit';
+    src: url(assets/fonts/Larsseit-ThinItalic.otf);
+}
+
 body {
     margin: 0;
 }
@@ -48,12 +53,19 @@ body::after {
 
 .image-buttons {
     display: flex;
+    padding-right: 20px;
 }
 
 .tab-button-image {
     border: none;
     cursor: pointer;
     background-color: white;
+    padding: 20px 20px;
+    transition: transform 0.2s ease;
+}
+
+.tab-button-image:hover {
+    transform: scale(1.1);
 }
 
 .tab-button {
@@ -70,21 +82,58 @@ body::after {
 }
 
 .title {
+    display: flex;
+    align-items: flex-start;
     border: 3px solid #000000;
     background: rgb(203, 255, 222);
-    line-height: 1px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-#title {
-    padding-left: 50px;
+.text-container {
+    line-height: 1px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+}
+
+#title1 {
+    font-size: 120px;
+    font-family: 'Monument Heavy', sans-serif;
+    margin-bottom: 50px;
+}
+
+#title2 {
+    font-size: 120px;
+    font-family: 'Monument Heavy', sans-serif;
+    margin-bottom: 50px;
+}
+
+#title3 {
     font-size: 120px;
     font-family: 'Monument Heavy', sans-serif;
 }
 
 #name {
-    padding-left: 50px;
-    font-family: 'Monument Light', sans-serif;
+    font-family: 'Larsseit', sans-serif;
     font-size: 30px;
+    margin-top: 40px;
+}
+
+.g10chuan {
+    width: 15%;
+    height: 15%;
+    margin-top: 55px;
+    margin-left: 500px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+.g8chuan {
+    width: 10%;
+    height: 10%;
+    margin-top: 200px;
+    margin-left: -450px;
+    border-radius: 20px;
+    border: 2px solid black;
 }
