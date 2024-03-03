@@ -2,21 +2,19 @@
 <html>
 
 <head>
+    <script src="script.js"></script>
+    <title>Chuan's Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
     <div class="tab-bar">
         <div class="text-buttons">
-            <button class="tab-button">Sports</button>
-            <button class="tab-button">Service</button>
-            <button class="tab-button">CS Projects</button>
+            <button class="tab-button" id="scrollAboutMe">About Me</button>
+            <button class="tab-button" id="scrollHobbies">Hobbies</button>
         </div>
+
         <div class="image-buttons">
-            <button class="tab-button-image">
-                <img src="assets/media/discord1.png" alt="Image 1" width="30" height="30">
-            </button>
             <button class="tab-button-image">
                 <img src="assets/media/insta.png" alt="Image 2" width="34" height="34">
             </button>
@@ -30,16 +28,73 @@
         <div class="text-container">
             <h1 id="title1">I'm</h1>
             <h1 id="title2">Chuan</h1>
-            <h1 id="title2">Lin</h1>
+            <h1 id="title2">Lin.</h1>
             <p id="name">a computer science student in ISF</p>
         </div>
 
-        <img src="assets/media/g10chuan.png" class="g10chuan">
-        <img src="assets/media/g8chuan.png" class="g8chuan">
+        <div class="image-container">
+            <img src="assets/media/g8chuan.png" class="img-fluid border rounded-3 shadow-lg mb-4" id="g8chuan"
+                width="250" height="300" loading="lazy">
+            <img src="assets/media/g10chuan.png" class="img-fluid border rounded-3 shadow-lg mb-4" id="g10chuan"
+                width="340" height="420" loading="lazy">
+        </div>
     </div>
 
-    <div class="aboutme">
-    
+    <div class="aboutme" id="aboutMeSection">
+        <h1 id="aboutme_heading">
+            ABOUT ME
+        </h1>
+        <p id="aboutme_info">
+            I am a 10th-grade student currently studying at ISF. I have been a part of ISF since 6th grade, and I have
+            been studying computer science since 9th grade. My previous coding experiences include Scratch, robot
+            programming, and basic C++. In grades 9 and 10, I learned Python, and I also learned Dart in grade 10. Apart
+            from academics, I enjoy playing sports and getting involved in school activities, particularly service
+            initiatives. If you need to contact me, feel free to reach out!
+        </p>
+    </div>
+
+    <div class="hobbies" id="hobbiesSection">
+        <h1 id="hobbies_heading">
+            HOBBIES
+        </h1>
+        <table id="hobbies_table">
+            <tr>
+                <th>Activity</th>
+                <th>Duration</th>
+            </tr>
+            <tr>
+                <td>Coding</td>
+                <td>2018-2024</td>
+            </tr>
+            <tr>
+                <td>Football</td>
+                <td>2014-2024</td>
+            </tr>
+            <tr>
+                <td>Cross Country</td>
+                <td>2023-2024</td>
+            </tr>
+            <tr>
+                <td>Track and Field</td>
+                <td>2022-2024</td>
+            </tr>
+            <tr>
+                <td>Graphic Design</td>
+                <td>2020-2024</td>
+            </tr>
+            <tr>
+                <td>Video Editing</td>
+                <td>2023-2024</td>
+            </tr>
+            <tr>
+                <td>Freestyle Football</td>
+                <td>2019-2023</td>
+            </tr>
+            <tr>
+                <td>Skating</td>
+                <td>2018-2019</td>
+            </tr>
+        </table>
     </div>
 
 </body>
