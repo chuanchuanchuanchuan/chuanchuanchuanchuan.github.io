@@ -1,3 +1,4 @@
+/* load fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
 
 @font-face {
@@ -30,6 +31,7 @@
     src: url(assets/fonts/SpaceMono-Regular.ttf);
 }
 
+/* this creates a thin border surrounding the screen as you scroll */
 body::after {
     content: '';
     position: fixed;
@@ -57,6 +59,7 @@ body::after {
     padding-right: 20px;
 }
 
+/* this makes the image grow bigger as I hover over the button */
 .tab-button-image {
     border: none;
     cursor: pointer;
@@ -78,6 +81,7 @@ body::after {
     cursor: pointer;
 }
 
+/* on hover, the font becomes bold */
 .tab-button:hover {
     font-family: 'Roobert Bold', sans-serif;
 }
@@ -101,6 +105,7 @@ body::after {
     font-size: 120px;
     font-family: 'Monument Heavy', sans-serif;
     margin-bottom: 5%;
+    /* margin bottom adds space between my words on top of each other */
 }
 
 #title2 {
@@ -123,13 +128,9 @@ body::after {
 .image-container {
     display: flex;
     flex-direction: row;
-    /* Images are placed in a row */
     align-items: flex-start;
-    /* Align items to the top, will be overridden by individual image styling */
     justify-content: flex-end;
-    /* Align the image container to the right */
     margin-left: auto;
-    /* Push the container to the right */
 }
 
 #g8chuan {
@@ -142,7 +143,6 @@ body::after {
 #g10chuan {
     border-radius: 20px;
     border: 2px solid black;
-    /* No margin-top needed for g10chuan, it remains aligned to the top */
 }
 
 .aboutme {
@@ -181,7 +181,9 @@ body::after {
     animation: float 3s ease-in-out infinite;
 }
 
+/* this makes my about me div float up and down */
 @keyframes float {
+
     0%,
     100% {
         transform: translateY(10);
@@ -216,13 +218,11 @@ body::after {
     width: 80%;
     border-collapse: collapse;
     margin: 0 auto;
-    /* Center table */
     overflow: hidden;
-    /* Ensures the border-radius applies to the table */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    /* Optional: adds a subtle shadow to your table */
 }
 
+/* this adjusts the table heading and table data */
 #hobbies_table th,
 #hobbies_table td {
     font-size: 30px;
