@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// script.js
+
 document.addEventListener('DOMContentLoaded', (event) => {
     const buttons = document.querySelectorAll('.image-buttons .tab-button-image');
     const urls = [
